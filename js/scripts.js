@@ -9,7 +9,12 @@ $(document).ready(function(){
       return item.toUpperCase();
     });
 
-    alert(shoplistUpper);
+    var fruitUpper= shoplistUpper[0];
+    var veggieUpper= shoplistUpper[1];
+    $(".fruit").text(fruitUpper);
+    $(".veggie").text(veggieUpper);
+    //$("#blanks").hide;
+    $("#result").show();
 
     event.preventDefault();
   });
